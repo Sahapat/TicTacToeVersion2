@@ -5,12 +5,10 @@ import java.util.Objects;
 public class GameTable
 {
     protected byte[][] Table;
-    protected char[][] Display;
 
     public GameTable(int Row, int Column)
     {
         Table = new byte[Row][Column];
-        Display = new char[Row][Column];
     }
 
     public void ClearTable()

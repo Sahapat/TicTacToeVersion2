@@ -2,6 +2,7 @@ import java.io.*;
 
 public class TicTacToe extends GameTable
 {
+    private char[][] Display;
     private final byte EMPTY = 0;
     private final byte X = 1;
     private final byte O = 4;
@@ -9,6 +10,7 @@ public class TicTacToe extends GameTable
     public TicTacToe()
     {
         super(3, 3);
+        Display = new char[3][3];
         Init();
     }
 
@@ -84,7 +86,6 @@ public class TicTacToe extends GameTable
 
     public void UpdateTable()
     {
-        for (int i = 0; i < 25; i++) System.out.println();
         System.out.print("\t\t");
         for (int i = 0; i < 25; i++) System.out.print("#");
         System.out.println("\n\t\t#       #       #       #");

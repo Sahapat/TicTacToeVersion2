@@ -10,6 +10,7 @@ public class Program
         while (true)
         {
             Winner check = Game.CheckWinner();
+            for (int i = 0; i < 25; i++) System.out.println();
             Game.UpdateTable();
             if (check == Winner.None)
             {
